@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Fomularz</title>
+</head>
+
+<body>
+<form action="https://formspree.io/kania.magda@tlen.pl" method="POST">
+		<br> Imię:
+		<br>
+		<input type="text" name="Imię">
+		<br> Nazwisko:
+		<br>
+		<input type="text" name="Nazwisko">
+		<br> E-mail:
+		<br>
+		<input type="email" name="e-mail">
+		<br> Telefon:
+		<br>
+		<input type="tel" name="telefon">
+		
+		<br> Miasto
+	<input list="Miasto" name="Miasto">
+	<datalist id="Miasto">
+		<option value="Kraków">
+			<option value="Warszawa">
+				<option value="Gdańsk">
+	</datalist>
+	<br>
+	<input type="radio" name="gender" value="m">Mężczyna
+	<br>
+	<input type="radio" name="gender" value="k">Kobieta
+	
+	<br>
+	<input type="checkbox" name="zgoda" value="zgoda"> Wyrażam zgodę na przetwarzanie moich danych osobowych dla celów rekrutacji.
+	<br>
+	<textarea rows="5" cols="50"> </textarea>
+	<br>
+	<input type="submit" value="Send"> </form>
+</body> 
+
+</html>
