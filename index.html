@@ -3,42 +3,59 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Fomularz</title>
+	<title>Formularz</title>
 </head>
 
 <body>
+
+<!--Onośnik do strony, na którą trafiają formularze wraz z zaznaczeniem metody akcji-->
 <form action="https://formspree.io/kania.magda@tlen.pl" method="POST">
-		<br> Imię:
-		<br>
-		<input type="text" name="Imię">
-		<br> Nazwisko:
-		<br>
-		<input type="text" name="Nazwisko">
-		<br> E-mail:
-		<br>
-		<input type="email" name="e-mail">
-		<br> Telefon:
-		<br>
-		<input type="tel" name="telefon">
-		
-		<br> Miasto
-	<input list="Miasto" name="Miasto">
-	<datalist id="Miasto">
-		<option value="Kraków">
-			<option value="Warszawa">
-				<option value="Gdańsk">
-	</datalist>
-	<br>
-	<input type="radio" name="gender" value="m">Mężczyna
-	<br>
-	<input type="radio" name="gender" value="k">Kobieta
-	
-	<br>
-	<input type="checkbox" name="zgoda" value="zgoda"> Wyrażam zgodę na przetwarzanie moich danych osobowych dla celów rekrutacji.
-	<br>
-	<textarea rows="5" cols="50"> </textarea>
-	<br>
-	<input type="submit" value="Send"> </form>
+
+<!--Dane tekstowe formularza-->
+<br> Imię:
+<br>
+<input type="text" name="Imię">
+<br> Nazwisko:
+<br>
+<input type="text" name="Nazwisko">
+
+<!--Adres e--mail formularza-->
+<br> E-mail:
+<br>
+<input type="email" name="e-mail">
+
+<!--Numer telefonu formularza-->
+<br> Telefon:
+<br>
+<input type="tel" name="telefon">
+
+<!--Wybór miasta z listy rozwijanej-->
+<br> Miasto
+<br> <input list="Miasto" name="Miasto">
+<datalist id="Miasto">
+	<option value="Kraków">
+		<option value="Warszawa">
+			<option value="Gdańsk">
+</datalist>
+
+<!--Wybór płci z pośród dostępnych wymienionych-->
+<br>
+<input type="radio" name="Płeć" value="m">Mężczyna
+<br>
+<input type="radio" name="Płeć" value="k">Kobieta
+<br>
+
+<!--Odznaczenie - potwierdzenie wyrażenia zgody-->
+<input type="checkbox" name="Zgoda" value="zgoda"> Wyrażam zgodę na przetwarzanie moich danych osobowych dla celów rekrutacji.
+<br>
+
+<!--Treść wiadomości-->
+<input type="textarea" name="textarea" rows="5" cols="50">
+<br>
+
+<!--Stopka formuły action, wysyłanie formularza-->
+<input type="submit" value="Wyślij"> </form>	
+
 </body> 
 
 </html>
