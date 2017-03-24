@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Formularz</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
+	
 	<!--Onośnik do strony, na którą trafiają formularze wraz z zaznaczeniem metody akcji-->
 	<form action="https://formspree.io/kania.magda@tlen.pl" method="POST">
-		<!--Dane tekstowe formularza-->
-		<label>Imię:</label>
-		<br><input type="text" name="Imię">
-		<br><label>Nazwisko:</label>
-		<br><input type="text" name="Nazwisko">
-		<!--Adres e-mail formularza-->
+	
+	<!--Dane tekstowe formularza-->
+	<label for="name">Imię:</label>
+	<br> <input type="text" name="name" id="name">
+	
+	<br> <label for="lastname">Nazwisko:</label>
+	<br> <input type="text" name="lastname" id="lastname">
+	
+	<!--Adres e-mail formularza-->
+	<br> <label for ="mail">E-mail:</label>
+	<br> <input type="email" name="_replyto" id="mail">
+ 
+	<!--Numer telefonu formularza-->
+	<br> <label for="tel">Telefon:</label>
+	<br> <input type="tel" name="tel" id="tel">
+	<br>
+	
+	<!--Wybór miasta z listy rozwijanej-->
+	<br> <label for="miasto">Wybierz miasto:</label>
+	<select name="miasto" id="miasto">
+		<option value="krakow">Kraków</option>
+		<option value="warszawa">Warszawa</option>
+		<option value="gdansk">Gdańsk</option>
+	</select>
+	<!--Wybór płci spośród dostępnych wymienionych-->
+	<br> 
+	<br>Płeć:</br> 
+		<input type="radio" name="plec" id="m" value="m" checked><label for="male">Mężczyna</label>
 		<br>
-		<label>E-mail:</label>
+		<input type="radio" name="plec" id="k" value="k">Kobieta</label>
+<br>
+	<!--Odznaczenie - potwierdzenie wyrażenia zgody-->
+		<br> <label for="zgoda"></label>
+		<input type="checkbox" name="zgoda" value="zgoda"> Wyrażam zgodę na przetwarzanie moich danych osobowych dla celów rekrutacji.
 		<br>
-		<input type="email" name="email">
-		<!--Numer telefonu formularza-->
-		<br>
-		<label>Telefon:</label>
-		<br>
-		<input type="tel" name="telefon">
-		<!--Wybór miasta z listy rozwijanej-->
-		<br>
-		<label>Miasto</label>
-		<br>
-		<input list="Miasto" name="Miasto">
-		<datalist id="Miasto">
-			<option value="Kraków">
-				<option value="Warszawa">
-					<option value="Gdańsk">
-		</datalist>
-		<!--Wybór płci spośród dostępnych wymienionych-->
-		<br>
-		<input type="radio" name="Płeć" value="m">Mężczyna
-		<br>
-		<input type="radio" name="Płeć" value="k">Kobieta
-		<br>
-		<!--Odznaczenie - potwierdzenie wyrażenia zgody-->
-		<input type="checkbox" name="Zgoda" value="zgoda"> Wyrażam zgodę na przetwarzanie moich danych osobowych dla celów rekrutacji.
-		<br>
+		
 		<!--Treść wiadomości-->
-		<label>Wiadomość</label>
 		<br>
-		<textarea rows="5" cols="50"> </textarea>
+		<label for="message">Wiadomość: </label>
+		<br> <textarea name="message" rows="10" cols="30"> </textarea>
+		
 		<!--Stopka formuły action, wysyłanie formularza-->
 		<br>
 		<input type="submit" value="Wyślij"> </form>
