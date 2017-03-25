@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Formularz</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> </head>
 
 <body>
 	
@@ -12,48 +11,59 @@
 	<form action="https://formspree.io/kania.magda@tlen.pl" method="POST">
 	
 	<!--Dane tekstowe formularza-->
-	<label for="name">Imię:</label>
-	<br> <input type="text" name="name" id="name">
+	<label for="name">Name:</label>
+	<br> 
+	<input type="text" name="name" id="name">
 	
-	<br> <label for="lastname">Nazwisko:</label>
-	<br> <input type="text" name="lastname" id="lastname">
+	<br> 
+	<label for="lastname">Last Name:</label>
+	<br> 
+	<input type="text" name="lastname" id="lastname">
 	
 	<!--Adres e-mail formularza-->
-	<br> <label for ="mail">E-mail:</label>
-	<br> <input type="email" name="_replyto" id="mail">
+	<br> 
+	<label for ="mail">E-mail:</label>
+	<br> 
+	<input type="email" name="_replyto" id="mail">
  
 	<!--Numer telefonu formularza-->
-	<br> <label for="tel">Telefon:</label>
+	<br> 
+	<label for="tel">Phone:</label>
 	<br> <input type="tel" name="tel" id="tel">
 	<br>
 	
 	<!--Wybór miasta z listy rozwijanej-->
-	<br> <label for="miasto">Wybierz miasto:</label>
-	<select name="miasto" id="miasto">
+	<br> 
+	<label for="city">Select city:</label>
+	<select name="city" id="city">
 		<option value="krakow">Kraków</option>
 		<option value="warszawa">Warszawa</option>
 		<option value="gdansk">Gdańsk</option>
 	</select>
+	<br>
+	
 	<!--Wybór płci spośród dostępnych wymienionych-->
-	<br> 
-	<br>Płeć:</br> 
-		<input type="radio" name="plec" id="m" value="m" checked><label for="male">Mężczyna</label>
-		<br>
-		<input type="radio" name="plec" id="k" value="k">Kobieta</label>
-<br>
+	<br>Pick your gender:
+	<input type="radio" name="gender" value="m" id="m" checked><label for="m">Male</label>
+	<input type="radio" name="gender" value="f" id="f" ><label for="f">Female</label>
+	<br>
+	
 	<!--Odznaczenie - potwierdzenie wyrażenia zgody-->
-		<br> <label for="zgoda"></label>
-		<input type="checkbox" name="zgoda" value="zgoda"> Wyrażam zgodę na przetwarzanie moich danych osobowych dla celów rekrutacji.
-		<br>
+	<br>
+	<label for="conf">Confirmation:</label>
+	<input type="checkbox" name="conf" value="conf" id="conf"> I am aware of all regulations.
+	<br>
 		
-		<!--Treść wiadomości-->
-		<br>
-		<label for="message">Wiadomość: </label>
-		<br> <textarea name="message" rows="10" cols="30"> </textarea>
+	<!--Treść wiadomości-->
+	<br>
+	<label for="message">Message: </label>
+	<br> 
+	<textarea name="message" id="message" rows="10" cols="30"> </textarea>
 		
-		<!--Stopka formuły action, wysyłanie formularza-->
-		<br>
-		<input type="submit" value="Wyślij"> </form>
+	<!--Stopka formuły action, wysyłanie formularza-->
+	<br>
+	<input type="submit" value="Send!"> </form>
+
 </body>
 
 </html>
